@@ -1,4 +1,4 @@
-## Skeleton Animation Practice
+# Skeleton Animation Practice
 
 ## 👉 _Description_
 - 라이브러리를 사용해 스켈레톤 애니메이션을 구현하였습니다.
