@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="148" id="fdm-tP-XIK" customClass="TableViewCell" customModule="SkeletonView_Practice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fdm-tP-XIK" id="jpa-ia-kEX">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tyP-LB-7QX">
+                        <rect key="frame" x="16" y="10" width="110" height="110"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="tyP-LB-7QX" secondAttribute="height" multiplier="1:1" id="6x2-81-XZV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeA-NC-xku">
+                        <rect key="frame" x="138" y="10" width="217" height="110"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="skeletonCornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="zeA-NC-xku" firstAttribute="leading" secondItem="tyP-LB-7QX" secondAttribute="trailing" constant="12" id="7BP-92-IN2"/>
+                    <constraint firstItem="tyP-LB-7QX" firstAttribute="top" secondItem="jpa-ia-kEX" secondAttribute="top" constant="10" id="KGF-Pf-rNu"/>
+                    <constraint firstItem="tyP-LB-7QX" firstAttribute="leading" secondItem="jpa-ia-kEX" secondAttribute="leading" constant="16" id="ci5-e6-Iac"/>
+                    <constraint firstAttribute="bottom" secondItem="tyP-LB-7QX" secondAttribute="bottom" constant="10" id="ecE-CF-Jbd"/>
+                    <constraint firstAttribute="bottom" secondItem="zeA-NC-xku" secondAttribute="bottom" constant="10" id="etA-rD-wtv"/>
+                    <constraint firstAttribute="trailing" secondItem="zeA-NC-xku" secondAttribute="trailing" constant="20" symbolic="YES" id="fZx-fq-tGM"/>
+                    <constraint firstItem="zeA-NC-xku" firstAttribute="top" secondItem="jpa-ia-kEX" secondAttribute="top" constant="10" id="mU5-sY-HYD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="desc" destination="zeA-NC-xku" id="228-dl-DKm"/>
+                <outlet property="imgView" destination="tyP-LB-7QX" id="dbD-WU-JLe"/>
+            </connections>
+            <point key="canvasLocation" x="271.73913043478262" y="145.98214285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

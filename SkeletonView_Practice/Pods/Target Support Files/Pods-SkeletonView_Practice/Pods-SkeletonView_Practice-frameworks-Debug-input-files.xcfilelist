@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-SkeletonView_Practice/Pods-SkeletonView_Practice-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/Then/Then.framework
